@@ -6,7 +6,6 @@
  */
 
 package Definitions;
-
 public class Video {
     // Creating Definition Class
     //Rules:
@@ -23,5 +22,13 @@ public class Video {
      * */
     public String getname() {
         return videoName;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public boolean getCheckout() {
+        return checkout;
     }
 }
