@@ -15,13 +15,22 @@ public class Video {
     private int rating;
     private boolean checkout;
 
-    //methods
-    /* *
-     *This is the method which return the video name.
-     * @return The name of the video
-     * */
-    public String getname() {
+    public void setRating(int rating) {
+        this.rating = rating;
+
+    }
+
+    public void isCheckout(boolean checkout) {
+        this.checkout = checkout;
+    }
+
+    public String getVideoName() {
         return videoName;
+    }
+
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+
     }
 
     public int getRating() {
