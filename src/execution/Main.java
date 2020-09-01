@@ -10,13 +10,11 @@ import Definitions.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video();
-        video.setVideoName("Sooryavansham");
-        video.setRating(4);
-        video.isCheckout(true);
-        System.out.println(
-                "Video Name :" + video.getVideoName() + " ," + "Rating :" + video.getRating() + " ," + "Avaliable :" + video.getCheckout() + "."
-        );
+        Video video = new Video("Sooryavansham", 4, true);
 
+        System.out.println(
+
+                video.toString()
+        );
     }
 }

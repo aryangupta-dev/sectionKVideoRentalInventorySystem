@@ -12,22 +12,14 @@ public class Video {
     private int rating;
     private boolean checkout;
 
-    public void setRating(int rating) {
+    public Video(String videoName, int rating, boolean checkout) {
+        this.videoName = videoName;
         this.rating = rating;
-
-    }
-
-    public void isCheckout(boolean checkout) {
         this.checkout = checkout;
     }
 
     public String getVideoName() {
         return videoName;
-    }
-
-    public void setVideoName(String videoName) {
-        this.videoName = videoName;
-
     }
 
     public int getRating() {
@@ -36,5 +28,9 @@ public class Video {
 
     public boolean getCheckout() {
         return checkout;
+    }
+
+    public String toString() {
+        return "Videoname : " + getVideoName() + "  Rating : " + getRating() + "  Checkout : " + getCheckout() + " .";
     }
 }
