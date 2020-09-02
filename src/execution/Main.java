@@ -10,7 +10,7 @@ import Definitions.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video("Sooryavansham", 4, true);
+        Video video = new Video("Sooryavansham");
 
         System.out.println(
 

@@ -6,16 +6,30 @@
  */
 
 package Definitions;
+
+import java.util.Objects;
+
 public class Video {
 
     private String videoName;
     private int rating;
     private boolean checkout;
 
-    public Video(String videoName, int rating, boolean checkout) {
+    public Video(String videoName) {
         this.videoName = videoName;
-        this.rating = rating;
-        this.checkout = checkout;
+        this.rating = 4;
+        this.checkout = true;
+    }
+
+    /*
+     * This method is for renting the video to the customer.
+     * */
+    public void doCheckout() {
+        System.out.println("Thank you for renting" + getVideoName() + ".");
+    }
+
+    public void doReturn() {
+
     }
 
     public String getVideoName() {
@@ -30,7 +44,22 @@ public class Video {
         return checkout;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Video video = (Video) o;
+        return rating == video.rating &&
+                checkout == video.checkout &&
+                Objects.equals(videoName, video.videoName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(videoName, rating, checkout);
+    }
+
     public String toString() {
-        return "Videoname : " + getVideoName() + "  Rating : " + getRating() + "  Checkout : " + getCheckout() + " .";
+        return "Videoname : " + getVideoName() + "  Rating : " + getRating() + "    Checkout : " + getCheckout() + " .";
     }
 }
