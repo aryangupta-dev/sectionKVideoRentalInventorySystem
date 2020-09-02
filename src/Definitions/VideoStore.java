@@ -8,5 +8,6 @@
 package Definitions;
 
 public class VideoStore {
+    private Video[] store;
 
 }
