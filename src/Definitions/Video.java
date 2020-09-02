@@ -47,6 +47,18 @@ public class Video {
         return checkout;
     }
 
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public void setCheckout(boolean checkout) {
+        this.checkout = checkout;
+    }
+
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
