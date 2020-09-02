@@ -81,4 +81,14 @@ public class VideoStore {
         System.out.println("The name of the video" + "\"" + name + "\"" + "rating " + rating);
     }
 
+    /**
+     * This method will print all the elements in the invetory.
+     */
+    public void listInventory() {
+        for (Video video : this.store) {
+            System.out.println(video);
+        }
+
+    }
+
 }
