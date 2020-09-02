@@ -45,7 +45,7 @@ public class VideoStore {
         return Arrays.toString(store);
     }
 
-    /*
+    /**
      * This method is to add the videoname to the store.
      * @param name is for the video to be adden.
      * */
@@ -53,20 +53,32 @@ public class VideoStore {
         System.out.println("\"" + name + "\" is now added");
     }
 
-    /*
+    /**
      * This method is for renting the video.
-     * @param name of the rental video
-     * */
+     *
+     * @param name of the rental video.
+     */
     public void doCheckout(String name) {
         System.out.println("Thank you for renting the video " + "\"" + name + "\"");
     }
 
-    /*
+    /**
      * This method is for returning the video that  the customer rented.
+     *
      * @param name is for the video that customer is returning.
-     * */
+     */
     public void doReturn(String name) {
         System.out.println("Thank you for returning the video" + "\"" + name + "\"");
+    }
+
+    /**
+     * This method is for setting the new value of the rating.
+     *
+     * @param name   which video rating is given.
+     * @param rating rating of the video in int.
+     */
+    public void receiveRating(String name, int rating) {
+        System.out.println("The name of the video" + "\"" + name + "\"" + "rating " + rating);
     }
 
 }
