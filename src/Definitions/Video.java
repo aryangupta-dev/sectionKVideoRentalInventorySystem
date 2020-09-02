@@ -29,7 +29,7 @@ public class Video {
     }
 
     /*
-     *This method is to get the return video from customer.k
+     *This method is to get the return video from customer.
      *  */
     public void doReturn() {
         System.out.println("Thank you for returning the video" + getVideoName() + ".");
