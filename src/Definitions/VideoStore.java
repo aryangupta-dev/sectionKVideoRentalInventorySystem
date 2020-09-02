@@ -53,4 +53,12 @@ public class VideoStore {
         System.out.println("\"" + name + "\" is now added");
     }
 
+    /*
+     * This method is for renting the video.
+     * @param name of the rental video
+     * */
+    public void doCheckout(String name) {
+        System.out.println("Thank you for renting the video " + "\"" + name + "\"");
+    }
+
 }
