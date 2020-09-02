@@ -44,4 +44,13 @@ public class VideoStore {
     public String toString() {
         return Arrays.toString(store);
     }
+
+    /*
+     * This method is to add the videoname to the store.
+     * @param name is for the video to be adden.
+     * */
+    public void addVideo(String name) {
+        System.out.println("\"" + name + "\" is now added");
+    }
+
 }
