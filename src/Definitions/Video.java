@@ -28,8 +28,11 @@ public class Video {
         System.out.println("Thank you for renting" + getVideoName() + ".");
     }
 
+    /*
+     *This method is to get the return video from customer.k
+     *  */
     public void doReturn() {
-
+        System.out.println("Thank you for returning the video" + getVideoName() + ".");
     }
 
     public String getVideoName() {
