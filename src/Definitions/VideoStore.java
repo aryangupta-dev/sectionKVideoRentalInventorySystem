@@ -12,16 +12,15 @@ import java.util.Arrays;
 public class VideoStore {
     private Video[] store;
     //getter
-
+    public Video[] getStore() {
+        return store.clone();//return the copy of the array.
+    }
     //cunstructor
 
     public VideoStore(Video[] videos) {
         this.store = videos;
     }
 
-    public Video[] getStore() {
-        return store.clone();//return the copy of the array.
-    }
 
     //setter
     public void setStore(Video[] store) {
