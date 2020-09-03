@@ -14,8 +14,9 @@ public class VideoStore {
     //getter
 
     //cunstructor
-    public VideoStore() {
-        this.store = new Video[5];
+
+    public VideoStore(Video[] videos) {
+        this.store = videos;
     }
 
     public Video[] getStore() {
@@ -78,7 +79,7 @@ public class VideoStore {
      * @param rating rating of the video in int.
      */
     public void receiveRating(String name, int rating) {
-        System.out.println("The name of the video" + "\"" + name + "\"" + "rating " + rating);
+        System.out.println("The name of the video  " + "\"" + name + "\"" + "  rating " + rating);
     }
 
     /**
