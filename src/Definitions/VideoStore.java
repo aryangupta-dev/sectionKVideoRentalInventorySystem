@@ -22,11 +22,6 @@ public class VideoStore {
     }
 
 
-    //setter
-    public void setStore(Video[] store) {
-        this.store = store;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
